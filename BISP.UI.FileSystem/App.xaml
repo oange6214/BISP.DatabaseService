@@ -1,0 +1,7 @@
+﻿<Application
+    x:Class="BISP.UI.FileSystemByExample.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:BISP.UI.FileSystemByExample">
+    <Application.Resources />
+</Application>

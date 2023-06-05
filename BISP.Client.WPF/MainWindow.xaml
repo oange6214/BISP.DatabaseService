@@ -1,0 +1,27 @@
+﻿<Window
+    x:Class="BISP.Client.WPF.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:BISP.Client.WPF"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:view="clr-namespace:BISP.Client.WPF.View"
+    xmlns:vm="clr-namespace:BISP.Client.WPF.ViewModel"
+    Title="MainWindow"
+    Width="1536"
+    Height="864"
+    d:DataContext="{d:DesignInstance vm:MainViewModel}"
+    mc:Ignorable="d">
+
+    <Window.Resources>
+        <DataTemplate DataType="{x:Type vm:RecipeListViewModel}">
+            <view:RecipeListView />
+        </DataTemplate>
+    </Window.Resources>
+
+    <Grid>
+        <ContentControl
+            Grid.Row="1"
+            Content="{Binding CurrentViewModel}" />
+    </Grid>
+</Window>
